@@ -29,12 +29,10 @@ export default function ChatBox(){
     };
 
     return(
-        <div className="w-full max-w-md bg-white rounded-xl shadow p-4">
-            <h1 className="text-center text-xl font-bold mb-4">💬 Chat App</h1>
+        <div className="chat-card">
+            <h1 className="chat-title">💬 Chat App</h1>
             <MessageList messages={messages}/>
             <MessageInput onSend={sendMessage}/>
-
-
         </div>
 
     );

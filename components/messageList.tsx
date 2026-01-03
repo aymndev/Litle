@@ -6,13 +6,12 @@ type Props={
 
 export default function MessagesList({messages} : Props){
 	return(
-		<div className="h-64 overflow-y-auto border p-2 mb-3 rounded">
+		<div className="message-list">
 			{messages.map((msg) => (
-				<p key={msg.id} className={`mb-1 ${msg.sender === "user" ? "text-right text-blue-500" : "text-left text-green-500"}`}>
-					{msg.sender === "user" ? "you" : "bot"}
-					{msg.text}
-
-				</p>
+				<div key={msg.id} className={`message-item ${msg.sender === "user" ? "user" : "bot"}`}>
+					<div style={{fontSize:12, color:'#334155', marginBottom:4}}>{msg.sender === "user" ? "You" : "Bot"}</div>
+					<div>{msg.text}</div>
+				</div>
 
 
 			))}
