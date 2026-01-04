@@ -21,7 +21,7 @@ export default function MessageInput({ onSend }: Props) {
 				value={text}
 				onChange={(e) => setText(e.target.value)}
 				placeholder="Type a message..."
-					className="flex-1 border rounded px-2 py-1"
+				className="flex-1 border rounded px-2 py-1"
 				onKeyDown={(e) => e.key === "Enter" && handleSend()}
 			/>
 				<button onClick={handleSend} className="bg-blue-500 text-white px-3 py-1 rounded">

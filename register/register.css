@@ -1,0 +1,88 @@
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4f46e5, #2563eb);
+    padding: 20px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.register-card {
+    background: white;
+    width: 380px;
+    max-width: 100%;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+}
+
+.register-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.register-inputs label {
+    font-size: 14px;
+    color: #555;
+}
+
+.register-inputs input {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.register-inputs input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.5);
+    outline: none;
+}
+
+.register-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.4);
+}
+
+.login-link {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.login-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

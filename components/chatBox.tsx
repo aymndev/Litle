@@ -21,7 +21,8 @@ export default function ChatBox(){
         setTimeout(()=> { 
             const botMessage: Message={
                 id:Date.now()+1,
-                text: "Hello , I'm a bot",
+                // text: "Hello , I'm a bot,how are you ",
+                text:`Hello , I'm a bot,how are you ?`,
                 sender: "bot",
             };
         setMessages((prev)=>[...prev, botMessage])
